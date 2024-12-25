@@ -1,4 +1,9 @@
 
+from master import student
+
+print("Welcome to the student managemnet system. \n Here are the list of the students in the system")
+for s in student:
+    print(s)
 print("Press 1 for adding a student \n Press 2 for deleting a student \n Press 3 for updating the student \n Press4 for viewing the deatils of the student")
 choice = int(input("\nEnter your Choice Now:"))
 if choice == 1:
@@ -12,5 +17,5 @@ elif choice ==4 :
 else:
     print("You have selected the wrong choice. Try again")
 
-student = []
+
 
