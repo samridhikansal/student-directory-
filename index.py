@@ -1,7 +1,7 @@
 
 from master import student
 from add_student import add_student
-#from sub_student import sub_student
+from sub_student import sub_student
 from view_student import view_student
 from update import update
 
@@ -15,10 +15,10 @@ if choice == 1:
     id = int(input("Enter the id of the student:"))
     name = str(input ("Enter th name of the student"))
     add_student(id,name)
-#elif choice ==2:
-    #print("You have selected to delete the student. \nPlease enter the id  and the name of the student you want to delete")
-   # id = int(input("Enter the id of the student:"))
-    #sub_student(id)
+elif choice ==2:
+    print("You have selected to delete the student. \nPlease enter the id  and the name of the student you want to delete")
+    id = int(input("Enter the id of the student:"))
+    sub_student(id)
     
 elif choice ==3:
     print("You have selected to update the student")
